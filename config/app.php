@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'PRC',
 
     /*
     |--------------------------------------------------------------------------
@@ -176,7 +176,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+		Barryvdh\Debugbar\ServiceProvider::class,
     ],
 
     /*
@@ -227,5 +227,10 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+	//轮播图
+	'carouses'=>'./carouses/'.date('Y-m-d'),
+	
+	//初始化上传文件
+	'uploads'=>'./uploads/'.date('Y-m-d'),
 
 ];
